@@ -2,7 +2,7 @@
 
 module AGrids
 
-type Vertex
+struct Vertex
 
 	x      ::Array{Float64,1}
 	value  ::Float64
@@ -19,7 +19,7 @@ type Vertex
 	end
 end
 
-type AGrid
+struct AGrid
 	points     :: Array{Vertex,1}
 
 	function AGrid()
